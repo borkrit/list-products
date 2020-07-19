@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>ProductList App</title>
+ 
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  
+  <nav class="navbar navbar-light bg-light">
+    <a href="/" class="navbar-brand">
+    ProductList App
+    </a>
+  </nav>
+
+  <div class="container">
+    
+    <div id="app" class="row pt-5">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-header">
+            Product List
+          </div>
+          <form id="formular" class="card-body">
+            <div class="form-group">
+              <input required type="text" name="" id="name-product" placeholder="Name Product" class="form-control">
+            </div>
+            <div class="form-group">
+                <input required type="number" step="1" name="" id="quantity-product" placeholder="quantity" class="form-control">
+              </div>
+             
+                <div class="form-group">
+                  
+                <select name="" id="category-product" class="form-control">
+                  <option value="chosee">chosee Category</option>
+                  <option value="fruits">fruits</option>
+                  <option value="vegetables">vegetables</option>
+                  <option value="toiletries">toiletries</option>
+                  <option value="accessories">accessories</option>
+                  <option value="clothing">clothing</option>
+                  
+                </select>
+                </div>
+              <input type="submit" value="add" class="btn btn-primary btn-block">
+          </form>
+        </div>
+      </div>
+      <div id="lista-products" class="col-md-8">
+        <p id="counters" >Total Products : 0</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="list.js"></script>
+</body>
+</html>

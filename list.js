@@ -87,5 +87,7 @@ counter.innerHTML= "Total Products :" + i;
 document.getElementById('lista-products').addEventListener('click', function(e){
   const ui = new UI();
   ui.deletProduct(e.target);
+  --i
+  counter.innerHTML= "Total Products :" + i;
   
 })
